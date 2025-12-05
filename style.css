@@ -1,0 +1,107 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+body {
+    background: #f2f2f2;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+main {
+    width: 90%;
+    max-width: 450px;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.15);
+    text-align: center;
+}
+
+
+h1 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+
+#click-para-escutar {
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
+    background: #eaeaea;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+#click-para-escutar:hover {
+    transform: scale(1.05);
+}
+
+
+.imagem-ouvido {
+    width: 90px;
+    height: auto;
+    border-radius: 10px;
+}
+
+
+.fala-do-usuario, 
+.fala-do-bot {
+    width: 100%;
+    padding: 15px;
+    margin-top: 25px;
+    border-radius: 15px;
+    background: #fafafa;
+    text-align: left;
+    min-height: 60px;
+    box-shadow: inset 0 0 5px rgba(0,0,0,0.1);
+}
+
+
+.texto-do-usuario {
+    font-size: 16px;
+    color: #333;
+}
+
+.texto-do-bot {
+    font-size: 16px;
+    color: #444;
+}
+
+
+.fala-do-bot {
+    background: #e7f0ff;
+    border-left: 5px solid #4a8cff;
+}
+
+
+.fala-do-usuario {
+    background: #fff6e0;
+    border-left: 5px solid #ffb300;
+}
+
+
+
+#click-para-escutar.pulsando {
+    animation: pulsar 1.2s infinite ease-in-out;
+}
+
+@keyframes pulsar {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.12); }
+    100% { transform: scale(1); }
+}
