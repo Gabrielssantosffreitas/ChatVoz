@@ -34,10 +34,10 @@ function atualizarTamanho(){
     textoDoUsuario.style.fontSize = tamanhoAtual + "px"
     spanTamanhoCorridor.textContent = tamanhoAtual + "px"
 }
-
+// terminar  de escrever as respostas do bot
 function responder (texto){
-    const pergutas = ["bom dia","quantos anos eu tenho"]
-    const respostas = ["se hoje for antes de meio dia, bom dia ","oush, como vou saber, faz nem sentido"]
+    const pergutas = ["bom dia","quantos anos eu tenho","qual a definicao de rn a termo","em relaçao ao periduo fertil da mulher qual data do ciclo menstrual ela esta mais propensa a engravidar?","os metodos anticoncepcionais sao seguros?"]
+    const respostas = ["se hoje for antes de meio dia, bom dia ","oush, como vou saber, faz nem sentido","criança nascida entre 37 e 42 semanas de gestação ","no 14º dia do ciclo menstrual","os metodos anticonceptivos devem ser escolidos de forma correta, somente a camisinha oferece proteçao contra infecoes sexualmente transmissiveis"]
  
     for (let index = 0; index < pergutas.length; index++) {
         const element = pergutas[index];
